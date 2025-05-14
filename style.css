@@ -67,7 +67,7 @@ section.active {
 }
 
 body.dark #feedback .container {
-  background: linear-gradient(145deg, #0c123b, #11223e, #104413);
+  background: linear-gradient(145deg, #10203d, #103426);
 }
 
 #feedback .header-block {
@@ -82,7 +82,7 @@ body.dark #feedback .container {
 }
 
 body.dark #feedback .header-block {
-  background: linear-gradient(145deg, #0d173c, #11223e, #103624);
+  background: linear-gradient(145deg, #102339, #102f2a);
 }
 
 #feedbackModal {
