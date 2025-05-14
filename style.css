@@ -1,0 +1,162 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-image: url('photo/day.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+  background-image: url('photo/night.jpg');
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(255, 222, 183, 0.9);
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+
+body.dark .navbar {
+  background-color: rgba(31, 31, 31, 0.9);
+}
+
+.navbar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+section {
+  display: none;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+body.dark section {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+section.active {
+  display: block;
+}
+
+#feedback .container {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 20px;
+  background: linear-gradient(145deg, #ffd4a3, #ffc698, #ffb288);
+  backdrop-filter: blur(6px);
+}
+
+body.dark #feedback .container {
+  background: linear-gradient(145deg, #0c123b, #11223e, #104413);
+}
+
+#feedback .header-block {
+  background: linear-gradient(145deg, #ffce9f, #ffc698, #ffba8e);
+  padding: 20px;
+  border-radius: 16px;
+  margin: 0 auto 20px auto;
+  backdrop-filter: blur(4px);
+  transform: translateY(0);
+  max-width: 500px;
+  text-align: center;
+}
+
+body.dark #feedback .header-block {
+  background: linear-gradient(145deg, #0d173c, #11223e, #103624);
+}
+
+#feedbackModal {
+  display: none;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  z-index: 1000;
+}
+
+body.dark #feedbackModal {
+  background-color: #171717;
+  color: #eee;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.photo img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.comment {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 10px;
+}
